@@ -1,10 +1,10 @@
-<h2><?php echo $title; ?></h2>
+<h2>Boeken</h2>
  
-<table border='1' cellpadding='4'>
+<table>
     <tr>
-        <td><strong>Title</strong></td>
-        <td><strong>Content</strong></td>
-        <td><strong>Action</strong></td>
+        <td><strong>Boek</strong></td>
+        <td><strong>Beschrijving</strong></td>
+        <td><strong>Opties</strong></td>
     </tr>
 <?php foreach ($books as $book): ?>
         <tr>

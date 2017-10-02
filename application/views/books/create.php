@@ -1,6 +1,6 @@
 
 
-<h2><?php echo $title; ?></h2>
+<h2>Boek toevoegen</h2>
  
 <?php echo validation_errors(); ?>
  

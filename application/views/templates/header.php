@@ -9,5 +9,8 @@
         </head>
         <body>
  
-                <h1>Library</h1>
-                <p><a href="<?php echo site_url('books'); ?>">Home</a> | <a href="<?php echo site_url('books/create'); ?>">Add books</a></p>
+ <ul class="navigation">
+  <li><a href="/bookshop/index.php/books">Home</a></li>
+  <li><a href="/bookshop/index.php/books/create">Create</a></li>
+</ul>
+
