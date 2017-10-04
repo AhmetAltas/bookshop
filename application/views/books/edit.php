@@ -1,3 +1,4 @@
+<div class="ind">
 <h2>Boek bewerken</h2>
  
 <?php echo validation_errors(); ?>
@@ -30,3 +31,5 @@
         </tr>
     </table>
 </form>
+
+</div>

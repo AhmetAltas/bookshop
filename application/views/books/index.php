@@ -1,3 +1,6 @@
+
+<div class="ind">
+
 <h2>Boeken</h2>
  
 <table>
@@ -18,3 +21,5 @@
         </tr>
 <?php endforeach; ?>
 </table>
+
+</div>

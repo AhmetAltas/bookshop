@@ -3,6 +3,7 @@
 <head>
 	<title><?php echo $books_item['title'] ?></title>
 </head>
+<div class="ind">
 <body>
 	<?php echo '<h1>'.$books_item['title'].'</h1>' ?>
 <p>Dit boek is geschreven door <?php  echo $books_item['author']; ?>.</p> 
@@ -14,6 +15,7 @@
 <p>Beschrijving;
 <br>
  <?php echo $books_item['description']; ?> </p>
+</div>
 </body>
 </html>
 

@@ -11,7 +11,7 @@ class books extends CI_Controller {
         public function index()
         {
                 $data['books'] = $this->books_model->get_books();
-        $data['title'] = 'books archive';
+        //$data['title'] = 'books archive';
 
         $this->load->view('templates/header', $data);
         $this->load->view('books/index', $data);
@@ -25,9 +25,10 @@ class books extends CI_Controller {
         if (empty($data['books_item']))
         {
                 show_404();
+     
         }
 
-        $data['title'] = $data['books_item']['title'];
+        //$data['title'] = $data['books_item']['title']; 
 
         $this->load->view('templates/header', $data);
         $this->load->view('books/view', $data);
@@ -60,7 +61,6 @@ class books extends CI_Controller {
 
     public function edit($id){
 
-            $id = $this->uri->segment(3);
 
             if (empty($id))
             {
@@ -70,7 +70,7 @@ class books extends CI_Controller {
             $this->load->helper('form');
             $this->load->library('form_validation');
 
-            $data['title'] = 'Edit a books item';
+            //$data['title'] = 'Edit a books item';
             $data['books_item'] = $this->books_model->get_books_by_id($id);                                    
 
         $this->form_validation->set_rules('title', 'Title', 'required');
@@ -94,10 +94,9 @@ class books extends CI_Controller {
             };
         }
 
-        public function delete()
+        public function delete($id)
     {
-        $id = $this->uri->segment(3);
-        
+ 
         if (empty($id))
         {
             show_404();

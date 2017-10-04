@@ -10,7 +10,7 @@
         <body>
  
  <ul class="navigation">
-  <li><a href="/bookshop/index.php/books">Home</a></li>
-  <li><a href="/bookshop/index.php/books/create">Create</a></li>
+  <li class="nav"><a href="/bookshop/index.php/books">Home</a></li>
+  <li ><a href="/bookshop/index.php/books/create">Create</a></li>
 </ul>
 

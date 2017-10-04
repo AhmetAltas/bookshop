@@ -1,4 +1,4 @@
              <br>
-             <em>&copy;Ahmet Altas </em>
+             <em class="ind">&copy;Ahmet Altas </em>
         </body>
 </html>

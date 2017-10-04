@@ -18,23 +18,23 @@ class Books_model extends CI_Model {
         return $query->row_array();
     }
     
-    public function get_books_by_id($id = 0)
+    public function get_books_by_id($id)
     {
-        if ($id === 0)
-        {
-            $query = $this->db->get('books');
-            return $query->result_array();
-        }
+        //if ($id === 0)
+       // {
+         //   $query = $this->db->get('books');
+           // return $query->result_array();
+        //}
  
         $query = $this->db->get_where('books', array('id' => $id));
         return $query->row_array();
     }
     
-    public function set_books($id = 0)
+    public function set_books($id)
     {
         $this->load->helper('url');
  
-        $slug = url_title($this->input->post('title'), 'dash', TRUE);
+       $slug = url_title($this->input->post('title'), 'dash', TRUE);
  
         $data = array(
             'title' => $this->input->post('title'),
