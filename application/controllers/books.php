@@ -6,6 +6,7 @@ class books extends CI_Controller {
                 parent::__construct();
                 $this->load->model('books_model');
                 $this->load->helper('url_helper');
+                $this->load->library('session');
         }
 
         public function index()
@@ -56,6 +57,8 @@ class books extends CI_Controller {
         }
         else
         {
+        $this->session->set_flashdata('success', 'book added successfully');
+        redirect("books");
         $this->books_model->set_books();
          $this->load->view('books/success'); }}
 
